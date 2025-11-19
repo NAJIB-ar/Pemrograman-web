@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perpustakaan Madiun</title>
+</head>
+<body>
+    <form action="formulir_perpuskotamadiun.html" method="post">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" name="nama_peminjam" id="nama"  required><br><br>
+
+        <label>Status Anggota:</label><br>
+        <input type="radio" id="mhs" name="status" value="mahasiswa" checked>
+        <label for="mhs">Mahasiswa</label>
+        <br>
+        <input type="radio" id="dosen" name="status" value="dosen">
+        <label for="dosen">Dosen/Staff</label>
+        <br><br>
+
+        <label for="judul">Judul Buku:</label><br>
+        <input type="text" id="judul" name="judul_buku" required><br><br>
+
+        <label for="kategori">Kategori Buku:</label><br>
+        <select name="kategori_buku" id="kategori">
+            <option value="">-- Pilih Kategori --</option>
+            <option value="teknologi">Teknologi & Komputer</option>
+            <option value="sains">Sains & Matematika</option>
+            <option value="sastra">Sastra & Novel</option>
+            <option value="bisnis">Ekonomi & Bisnis</option>
+        </select><br><br>
+        <label for="tgl_pinjam">Tanggal Peminjaman:</label><br>
+        <input type="date" id="tgl_pinjam" name="tanggal_pinjam"><br><br>
+
+        <label for="catatan">Catatan Kondisi Buku:</label><br>
+        <textarea name="keterangan" id="catatan" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Pinjam Buku">
+    </form>
+</body>
+</html>
