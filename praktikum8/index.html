@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Nilai Angka ke Nilai Huruf</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      button {
+        margin-left: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      input {
+        padding: 5px;
+        width: 100px;
+      }
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Konversi Nilai Angka ke Nilai Huruf</h1>
+    <p>Masukkan nilai antara 0 dan 100 untuk dikonversi ke nilai huruf.</p>
+    <input
+      type="number"
+      id="scoreInput"
+      min="0"
+      max="100"
+      placeholder="Enter score"
+    />
+    <button id="convertBtn">Convert</button>
+    <div id="result"></div>
+
+    <script src="gradeConverter.js"></script>
+    <script>
+      document
+        .getElementById("convertBtn")
+        .addEventListener("click", function () {
+          const score = parseFloat(document.getElementById("scoreInput").value);
+          const result = convertToLetterGrade(score);
+          document.getElementById("result").innerText = result;
+        });
+    </script>
+  </body>
+</html>
