@@ -1,4 +1,0 @@
-- [x] Update index.html: Replace single input with two inputs for num1 and num2, add operation buttons (+, -, *, /), add result input field.
-- [x] Update script.js: Replace Solve and Result functions with Compute function that performs operation on num1 and num2 and displays result.
-- [x] Update style.css: Adjust styles for vertical layout of inputs and buttons.
-- [x] Test the calculator by opening index.html.
