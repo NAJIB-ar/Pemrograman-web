@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calc">
+      <div id="content">
+        <form>
+          <div id="inputs">
+            <input type="text" id="num1" placeholder="Bilangan Pertama" />
+            <input type="text" id="num2" placeholder="Bilangan Kedua" />
+          </div>
+          <div class="btn">
+            <input type="button" value="+" onclick="Compute('+')" />
+            <input type="button" value="-" onclick="Compute('-')" />
+            <input type="button" value="*" onclick="Compute('*')" />
+            <input type="button" value="/" onclick="Compute('/')" />
+          </div>
+            <div id="output">
+            <input type="text" id="result" readonly placeholder="Hasil" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
